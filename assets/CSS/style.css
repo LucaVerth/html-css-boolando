@@ -1,0 +1,129 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* row items */
+.top-row{
+  width: 100%;
+}
+
+.bot-row{
+  width: 100%;
+}
+
+.item{
+  width: calc(100% / 3);
+  float: left;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+
+.item img{
+  width: 100%
+}
+
+.heart{
+  width: 50px;
+  height: 50px;
+  background-color: white;
+  position: absolute;
+  top: 30px;
+  right: 10px;
+  text-align: center;
+  padding: 10px;
+  font-size: 25px;
+}
+
+/* discount tags */
+.tags{
+  color: white;
+  position: absolute;
+  text-align: center;
+  padding: 1%;
+  font-weight: bold;
+}
+.discount{
+  width: 60px;
+  height: 30px;
+  background-color: red;
+  left: 10px;
+  bottom: 100px;
+}
+
+.info{
+  width: 110px;
+  height: 30px;
+  background-color: green;
+  left: 80px;
+  bottom: 100px;
+}
+
+.info2{
+  width: 110px;
+  height: 30px;
+  background-color: green;
+  left: 10px;
+  bottom: 100px;
+}
+
+/* items description */
+.desc{
+  padding-top: 15px;
+}
+
+.desc ul li{
+  list-style-type: none;
+}
+
+.desc ul li:nth-child(2){
+  font-weight: bolder;
+}
+
+.desc ul li:first-child{
+  font-size: 14px;
+}
+
+.desc .price{
+  color: red;
+}
+
+.second-price::after{
+  content: "29,99 \20AC";
+  text-decoration: line-through;
+  color: black;
+}
+
+/* hover effect  */
+.imagehover1:hover{
+  content: url(../img/1b.webp);
+}
+.imagehover2:hover{
+  content: url(../img/2b.webp);
+}
+.imagehover3:hover{
+  content: url(../img/3b.webp);
+}
+.imagehover4:hover{
+  content: url(../img/4b.webp);
+}
+.imagehover5:hover{
+  content: url(../img/5b.webp);
+}
+.imagehover6:hover{
+  content: url(../img/6b.webp);
+}
